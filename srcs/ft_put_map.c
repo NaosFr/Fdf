@@ -6,11 +6,24 @@
 /*   By: ncella <ncella@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/05 17:28:44 by ncella            #+#    #+#             */
-/*   Updated: 2017/12/08 13:31:05 by ncella           ###   ########.fr       */
+/*   Updated: 2017/12/10 09:55:49 by ncella           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fdf.h"
+
+static void		ft_free_char(char **str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
+}
 
 static int		**ft_convert_to_int(char *buffer, t_mlx *smlx)
 {
@@ -36,7 +49,7 @@ static int		**ft_convert_to_int(char *buffer, t_mlx *smlx)
 		}
 		y++;
 	}
-	ft_memdel((void**)&str);
+	ft_free_char(str);
 	return (dest);
 }
 

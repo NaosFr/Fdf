@@ -6,7 +6,7 @@
 /*   By: ncella <ncella@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/25 11:21:59 by ncella            #+#    #+#             */
-/*   Updated: 2017/12/08 13:35:17 by ncella           ###   ########.fr       */
+/*   Updated: 2017/12/09 11:00:40 by ncella           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ static void		ft_key_scale(int keycode, t_mlx *smlx)
 		smlx->scale -= 1;
 	if (keycode == 24)
 		smlx->scale += 1;
+	if (keycode == 34)
+		ft_init(smlx);
 }
 
 static void		ft_key_size(int keycode, t_mlx *smlx)

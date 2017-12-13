@@ -6,7 +6,7 @@
 #    By: ncella <ncella@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/22 14:43:15 by ncella            #+#    #+#              #
-#    Updated: 2017/12/08 11:39:57 by ncella           ###   ########.fr        #
+#    Updated: 2017/12/09 11:01:15 by ncella           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC_NAME = main.c ft_key.c ft_read.c ft_check_map.c ft_draw.c ft_put_map.c \
 			ft_color.c ft_info.c ft_init.c ft_algo.c 
 SRC = $(addprefix srcs/, $(SRC_NAME))
 OBJ = $(patsubst srcs/%.c, obj/%.o, $(SRC))
-CFLAGS = -Wall -Wextra -Werror -I libft/ -I minilibx_macos/ -g
+CFLAGS = -Wall -Wextra -Werror -I libft/ -I minilibx_macos/
 LIBS = -framework OpenGL -framework AppKit libft/libft.a minilibx_macos/libmlx.a 
 
 all: $(NAME)

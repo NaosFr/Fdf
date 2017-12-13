@@ -6,7 +6,7 @@
 /*   By: ncella <ncella@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/22 14:41:50 by ncella            #+#    #+#             */
-/*   Updated: 2017/12/08 13:03:03 by ncella           ###   ########.fr       */
+/*   Updated: 2017/12/10 09:56:14 by ncella           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 # include <fcntl.h>
 # include <math.h>
 
-# define WIDTH 1500
-# define HEIGHT 1000
+# define WIDTH 1200
+# define HEIGHT 800
 # define ABS(Value) ((Value < 0) ? (Value * (-1)) : (Value))
 # define BUFF_SIZE 9999
 # define RED_PURPLE 0x554C72
